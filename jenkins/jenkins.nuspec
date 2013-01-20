@@ -15,7 +15,7 @@
     <copyright>MIT</copyright>
     <licenseUrl>https://raw.github.com/jenkinsci/jenkins/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/cbadke/chocolatey-packages/master/jenkins/jenkins_logo.png</iconUrl>
+    <iconUrl>https://raw.github.com/cbadke/chocolateypackages/master/jenkins/jenkins_logo.png</iconUrl>
     <releaseNotes>http://jenkins-ci.org/changelog</releaseNotes>
   </metadata>
   <files>
