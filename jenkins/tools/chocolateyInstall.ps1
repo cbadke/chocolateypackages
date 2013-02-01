@@ -1,6 +1,6 @@
 ﻿$packageName = "jenkins"
-$zipFile = "jenkins-1.499.zip"
-$msiFile = "jenkins-1.499.msi"
+$zipFile = "jenkins-1.500.zip"
+$msiFile = "jenkins-1.500.msi"
 $url = "http://mirrors.jenkins-ci.org/windows/$zipFile"
 $url64 = $url
 $silentArgs = "/quiet"
