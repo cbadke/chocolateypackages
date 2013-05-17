@@ -1,5 +1,14 @@
-$nuspec_file = ".\jenkins\jenkins.nuspec"
-$install_script = ".\jenkins\tools\chocolateyInstall.ps1"
+#
+# this script updates the nuspec and chocolateyInstall.ps1 with the latest version number
+#
+
+function Get-ScriptPath
+{
+    Split-Path $myInvocation.ScriptName
+}
+
+$nuspec_file = Join-Path (Get-ScriptPath) ".\jenkins\jenkins.nuspec"
+$install_script = Join-Path (Get-ScriptPath) ".\jenkins\tools\chocolateyInstall.ps1"
 
 function Get-Latest-Jenkins-For-Windows-Version {
     $url = "http://mirrors.jenkins-ci.org/windows/latest"
