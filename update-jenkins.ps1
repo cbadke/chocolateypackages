@@ -1,4 +1,5 @@
 $nuspec_file = ".\jenkins\jenkins.nuspec"
+$install_script = ".\jenkins\tools\chocolateyInstall.ps1"
 
 function Get-Latest-Jenkins-For-Windows-Version {
     $url = "http://mirrors.jenkins-ci.org/windows/latest"
@@ -32,5 +33,10 @@ $nuspec.package.metadata.version = $latest_nuspecformat
 $nuspec.Save($nuspec_file)
 
 # insert $latest into chocolatey install file
+$scrpt = Get-Content $install_script
+$new_scrpt = $scrpt -replace "^[\$]version =.*", "`$version = `"$latest`""
+$new_scrpt | Set-Content $install_script
 
 # push changes to origin
+# git commit -a -m "Updated Jenkins package to version $latest"
+# git push origin master:master
