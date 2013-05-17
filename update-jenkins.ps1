@@ -49,3 +49,5 @@ $new_scrpt | Set-Content $install_script
 # push changes to origin
 git commit -a -m "Updated Jenkins package to version $latest"
 git push origin master:master
+
+Write-Host "Jenkins package version $latest succesfully pushed."
