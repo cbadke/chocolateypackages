@@ -27,6 +27,9 @@ if($current -eq $latest_nuspecformat)
 Write-Host "A new Jenkins Installer ($latest) is available, updating package ..."
 
 # insert $latest into the nuspec file
+$nuspec = [xml] (Get-Content $nuspec_file)
+$nuspec.package.metadata.version = $latest_nuspecformat
+$nuspec.Save($nuspec_file)
 
 # insert $latest into chocolatey install file
 
