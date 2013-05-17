@@ -38,5 +38,5 @@ $new_scrpt = $scrpt -replace "^[\$]version =.*", "`$version = `"$latest`""
 $new_scrpt | Set-Content $install_script
 
 # push changes to origin
-# git commit -a -m "Updated Jenkins package to version $latest"
-# git push origin master:master
+git commit -a -m "Updated Jenkins package to version $latest"
+git push origin master:master
