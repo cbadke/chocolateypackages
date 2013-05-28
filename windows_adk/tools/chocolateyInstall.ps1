@@ -9,8 +9,6 @@ $silentArgs = "/quiet /norestart /log $env:temp\win_adk.log"
 
 try { 
         Install-ChocolateyPackage $packageName 'exe' $silentArgs $url
-
-        Write-ChocolateySuccess "$packageName"
 } catch {
         Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
         throw
