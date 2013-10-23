@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PSReadLine</id>
+    <version>1.0.0.3</version>
+    <authors>Jason Shirk</authors>
+    <owners>Curtis Badke</owners>
+    <projectUrl>https://github.com/lzybkr/PSReadLine</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://raw.github.com/lzybkr/PSReadLine/master/License.txt</licenseUrl>
+    <summary>A bash inspired readline implementation for PowerShell</summary>
+    <description>Once installed you will likely want to change your profile.ps1 to automatically load the PSReadLine module. Please refer to the project website for instructions.</description>
+    <releaseNotes></releaseNotes>
+    <copyright></copyright>
+    <tags>Powershell PS Script</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
