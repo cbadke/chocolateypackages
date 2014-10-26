@@ -11,7 +11,6 @@ $nuspec_file = Join-Path (Get-ScriptPath) ".\jenkins\jenkins.nuspec"
 $install_script = Join-Path (Get-ScriptPath) ".\jenkins\tools\chocolateyInstall.ps1"
 
 function Get-Latest-Jenkins-For-Windows-Version {
-    remove-item alias:\curl
     $url = "http://mirrors.jenkins-ci.org/windows/latest"
     $headers = curl -sI $url 
     $loc = $headers | Where-Object {$_ -like "Location: *"}
