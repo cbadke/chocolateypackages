@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>WindowsADK.WinPE</id>
+    <id>windows-adk-winpe</id>
     <title>Windows Assessment and Deployment Kit</title>
     <version>8.100.26866.0</version>
     <authors>Microsoft</authors>

@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>WindowsADK</id>
+    <id>windows-adk-all</id>
     <title>Windows Assessment and Deployment Kit</title>
     <version>8.100.26866.0</version>
     <authors>Microsoft</authors>
     <owners>Curtis Badke</owners>
     <summary>The Windows Assessment and Deployment Kit (Windows ADK) is a collection of tools that you can use to customize, assess, and deploy Windows operating systems to new computers.</summary>
-    <description>This package will silently install Windows ADK to the default location with default features activated.</description>
+    <description>This package will silently install Windows ADK to the default location with all features activated.</description>
     <projectUrl>http://www.microsoft.com/OEM/en/installation/downloads/Pages/windows-8-adk.aspx</projectUrl>
     <tags>winpe wim aik windows automation</tags>
     <copyright>Microsoft 2012</copyright>
     <licenseUrl>http://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/cbadke/chocolateypackages/master/windows_adk/win_logo.png</iconUrl>
+    <iconUrl>https://raw.github.com/cbadke/chocolateypackages/master/windows_adk_all/win_logo.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>
