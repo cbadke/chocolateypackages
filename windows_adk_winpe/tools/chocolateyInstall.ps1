@@ -3,7 +3,7 @@ $packageName = "WindowsADK.WinPE"
 # we hardcode the version in this script, so that users can install specific
 # versions from Chocolatey.org
 #
-$url = "http://download.microsoft.com/download/9/9/F/99F5E440-5EB5-4952-9935-B99662C3DF70/adk/adksetup.exe"
+$url = "http://download.microsoft.com/download/6/A/E/6AEA92B0-A412-4622-983E-5B305D2EBE56/adk/adksetup.exe"
 
 $silentArgs = "/quiet /norestart /log $env:temp\win_adk.log /features OptionId.DeploymentTools OptionId.WindowsPreinstallationEnvironment"
 
