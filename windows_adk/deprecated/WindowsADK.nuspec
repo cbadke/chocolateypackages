@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>WindowsADK</id>
+    <title>[Deprecated] Windows Assessment and Deployment Kit</title>
+    <version>2.0</version>
+    <authors>Microsoft</authors>
+    <owners>Curtis Badke</owners>
+    <summary>The Windows Assessment and Deployment Kit (Windows ADK) is a collection of tools that you can use to customize, assess, and deploy Windows operating systems to new computers.</summary>
+    <description>Note that this package name is DEPRECATED. Future versions are available at windows-adk. This package will silently install Windows ADK to the default location with default features activated.</description>
+    <projectUrl>http://www.microsoft.com/OEM/en/installation/downloads/Pages/windows-8-adk.aspx</projectUrl>
+    <tags></tags>
+    <copyright>Microsoft 2012</copyright>
+    <licenseUrl>http://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.github.com/cbadke/chocolateypackages/master/windows_adk/win_logo.png</iconUrl>
+    <releaseNotes></releaseNotes>
+    <dependencies>
+      <dependency id="windows-adk" />
+    </dependencies>
+  </metadata>
+</package>
