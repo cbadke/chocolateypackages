@@ -12,7 +12,7 @@ $install_script = Join-Path (Get-ScriptPath) ".\jenkins\tools\chocolateyInstall.
 
 function Get-Latest-Jenkins-For-Windows-Version {
     $url = "http://mirrors.jenkins-ci.org/windows/latest"
-    $headers = curl.exe -sI $url 
+    $headers = curl.exe -sI $url
     $loc = $headers | Where-Object {$_ -like "Location: *"}
     $version_dot_zip = $loc.Split("/-") | Select-Object -Last 1
     $version = $version_dot_zip.Replace(".zip", "")
@@ -51,3 +51,7 @@ git commit -a -m "Updated Jenkins package to version $latest"
 git push origin master:master
 
 Write-Host "Jenkins package version $latest succesfully pushed."
+
+cd jenkins
+rm -force *.nupkg
+nuget pack
