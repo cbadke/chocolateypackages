@@ -2,7 +2,7 @@ $packageName = "jenkins"
 # the $version variable below is automatically set by our update script
 # we hardcode the version in this script, so that users can install specific
 # versions from Chocolatey.org
-$version = "1.608"
+$version = "1.609"
 $zipFile = "jenkins-$version.zip"
 $msiFile = "jenkins-$version.msi"
 $url = "http://mirrors.jenkins-ci.org/windows/$zipFile"
