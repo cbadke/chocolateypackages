@@ -31,6 +31,7 @@ $latest_nuspecformat = "$latest.0.0"
 if($current -eq $latest_nuspecformat)
 {
     Write-Host "The package is up to date with the latest Jenkins installer ($latest)"
+    pause
     exit 0
 }
 
@@ -48,10 +49,13 @@ $new_scrpt | Set-Content $install_script
 
 # push changes to origin
 git commit -a -m "Updated Jenkins package to version $latest"
-git push origin master:master
 
 Write-Host "Jenkins package version $latest succesfully pushed."
 
 cd jenkins
 rm -force *.nupkg
-nuget pack
+cpack
+
+git push origin master:master
+
+pause
