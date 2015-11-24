@@ -23,8 +23,6 @@ try {
 
         Install-ChocolateyInstallPackage $packageName 'msi' $silentArgs $file -validExitCodes $validExitCodes
 
-        Write-ChocolateySuccess "$packageName"
 } catch {
-        Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
         throw
 }
