@@ -12,7 +12,6 @@
 2. Monitoring executions of externally-run jobs, such as cron jobs and procmail jobs, even those that are run on a remote machine. For example, with cron, all you receive is regular e-mails that capture the output, and it is up to you to look at them diligently and notice when it broke. Jenkins keeps those outputs and makes it easy for you to notice when something is wrong.</description>
     <projectUrl>http://jenkins-ci.org</projectUrl>
     <tags>ci build jenkins admin</tags>
-    <copyright>MIT</copyright>
     <licenseUrl>https://raw.github.com/jenkinsci/jenkins/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/cbadke/chocolateypackages/master/jenkins/jenkins_logo.png</iconUrl>
